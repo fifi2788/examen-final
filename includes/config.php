@@ -1,7 +1,7 @@
 <?php
 $dbHost = 'localhost';
 $dbUser = 'root';
-$dbPassword = 'root';
+$dbPassword = '';
 $dbName = 'Gestion';
 
 $conn = mysqli_connect($dbHost, $dbUser, $dbPassword, $dbName);
