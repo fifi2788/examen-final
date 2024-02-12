@@ -73,7 +73,7 @@
             </div>
         </div>
     </div>
-
+   
     <!-- Bootstrap core JavaScript-->
     <script src="../assets/backoffice/vendor/jquery/jquery.min.js"></script>
     <script src="../assets/backoffice/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -90,6 +90,32 @@
     <!-- Page level custom scripts -->
     <script src="../assets/backoffice/js/demo/chart-area-demo.js"></script>
     <script src="../assets/backoffice/js/demo/chart-pie-demo.js"></script>
+
+    <script>
+       let sub = document.querySelector("#sub")
+        let form1 = document.getElementById("form1")
+        sub.addEventListener("click", (e)=>{
+                e.preventDefault()
+                let data =  new FormData(form1)
+                const xhr = new XMLHttpRequest()
+                
+                xhr.open("POST", "...."); //changer ... avec le lien du traitelement php
+                xhr.onload = function() {
+                    if (xhr.status >= 200 && xhr.status < 300) {
+                        // Succès de la requête
+                        console.log('Réponse du serveur : ' + xhr.responseText);
+                        alert("Enregistrement Reussi")
+                    } else {
+                        // Erreur de la requête
+                        console.error('La requête a échoué avec le statut ' + xhr.status);
+                    
+                    }
+                };
+                xhr.send(data);
+    
+})
+    
+    </script>
 
 </body>
 

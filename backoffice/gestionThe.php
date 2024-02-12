@@ -21,7 +21,7 @@ $message = isset($_GET['message']) ? $_GET['message'] : '';
                 <h6 class="m-0 font-weight-bold text-primary">Thé</h6>
             </div>
             <div class="card-body">
-                <form action="traitement/ajoutThe.php" method="post">
+                <form action="traitement/ajoutThe.php" method="post" id="form1">
                     <div class="mb-3">
                         <label for="nom_variete" class="form-label">Nom variété</label>
                         <input type="text" class="form-control" id="nom_variete" name="nom_variete" placeholder="">
@@ -34,7 +34,7 @@ $message = isset($_GET['message']) ? $_GET['message'] : '';
                         <label for="rendement_pied" class="form-label">Rendement (Pieds)</label>
                         <input type="text" class="form-control" id="rendement_pied" name="rendement_pied" placeholder="">
                     </div>
-                    <button type="submit" class="btn btn-outline-primary">Valider</button>
+                    <button type="submit" class="btn btn-outline-primary" id="sub">Valider</button>
                 </form>
             </div>
         </div>
