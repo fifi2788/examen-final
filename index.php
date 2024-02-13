@@ -64,5 +64,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </div>
         </div>
     </div>
+    <footer class="sticky-footer bg-black">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy;</span>
+                        <br>
+                        <span> RABENJATIANA Fitiavana ETU002788</span>
+                        <br>
+                        <span> RAKOTONIRINA Fahendrena Itokiana ETU002170</span>
+                    </div>
+                </div>
+            </footer>
 </body>
 </html>
