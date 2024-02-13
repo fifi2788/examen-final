@@ -1,8 +1,8 @@
 <?php
-$dbHost = '172.70.7.134 ';//
-$dbUser = 'ETU02788'; //
-$dbPassword = ''; // mot de passe serveur
-$dbName = 'db_desp3_ETU002788'; //
+$dbHost = '172.70.2.135';
+$dbUser = 'ETU002788'; 
+$dbPassword = 'gPK8s46sa0O0';
+$dbName = 'db_desp3_ETU002788'; 
 
 $conn = mysqli_connect($dbHost, $dbUser, $dbPassword, $dbName);
 
